@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./index.js" defer></script>
+    <title>Github API Search</title>
+  </head>
+  <body
+    class="bg-[#333333] flex flex-col m-3 items-center h-screen font-montserrat justify-center gap-y-24"
+  >
+    <h1 class="text-white text-center font-normal text-4xl md:text-5xl">
+      Github Users
+    </h1>
+    <div
+      class="bg-[#4078C0] px-3 py-6 flex flex-col text-white font-medium rounded-3xl gap-y-16 md:p-8 md:mx-16 lg:p-8 lg:w-2/3 lg:gap-y-24"
+    >
+      <header class="flex flex-col justify-center items-center">
+        <label
+          for="text"
+          class="mb-3 font-light text-lg md:text-2xl lg:text-3xl"
+          >Search user:</label
+        >
+        <input
+          data-user-input
+          type="text"
+          required="true"
+          name="text"
+          class="bg-[#333333] rounded-2xl h-8 px-5 md:w-3/4 font-montserrat focus:bg-[#444444] md:text-lg lg:text-xl lg:w-2/4 lg:h-12 lg:mt-4"
+        />
+      </header>
+      <div class="flex flex-row justify-center gap-x-12 items-center">
+        <div
+          class="hidden lg:flex aspect-square w-2/3 max-w-xs bg-[#333333] p-5 rounded-2xl"
+        >
+          <img
+            data-img
+            src="./img.png"
+            alt="avatar"
+            class="rounded-2xl bg-transparent"
+          />
+        </div>
+        <div
+          class="bg-[url('./content.png')] bg-cover bg-center bg-no-repeat flex gap-y-4 md:p-6 flex-col rounded-2xl max-w-3xl p-2 py-4 justify-center align-middle h-full"
+        >
+          <p class="text-[#4078C0] font-light text-sm md:text-lg lg:text-xl">
+            Username:
+            <span
+              data-username
+              class="ml-2 text-white font-normal text-base md:text-lg lg:text-2xl"
+              >user</span
+            >
+          </p>
+          <p class="text-[#4078C0] font-light text-sm md:text-lg lg:text-xl">
+            Profile Link:
+            <a
+              target="blank"
+              href="#"
+              data-link
+              class="ml-2 text-white font-normal text-base md:text-lg lg:text-2xl"
+              >github.com/user</a
+            >
+          </p>
+          <p class="text-[#4078C0] font-light text-sm md:text-lg lg:text-xl">
+            Created At:
+            <span
+              data-created-at
+              class="ml-2 text-white font-normal text-base md:text-lg lg:text-2xl"
+              >00-00-00</span
+            >
+          </p>
+          <p class="text-[#4078C0] font-light text-sm md:text-lg lg:text-xl">
+            Bio:
+            <span
+              data-bio
+              class="ml-2 text-white font-normal text-base md:text-lg lg:text-2xl"
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              dolore commodi id! Vitae at placeat quo repudiandae!
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
